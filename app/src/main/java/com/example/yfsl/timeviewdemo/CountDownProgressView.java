@@ -210,6 +210,7 @@ public class CountDownProgressView extends View {
 
     public void setText(String text){
         this.text = text;
+        invalidate();
     }
 
     public void setTimeMillis(long timeMillis){

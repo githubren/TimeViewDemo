@@ -5,36 +5,81 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="horizontal"
+    >
 
-    <com.example.yfsl.timeviewdemo.CountDownProgressView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:circSolidColor="@android:color/darker_gray"
-        app:circFrameColor="@android:color/black"
-        app:progressColor="@android:color/holo_blue_light"
-        app:textColor="@android:color/white"
-        android:id="@+id/countDownProgress"
-        android:clickable="true"
-        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="start"
-        android:id="@+id/btn_start"/>
+        <com.example.yfsl.timeviewdemo.CountDownProgressView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:circSolidColor="@android:color/darker_gray"
+            app:circFrameColor="@android:color/black"
+            app:progressColor="@android:color/holo_blue_light"
+            app:textColor="@android:color/white"
+            android:id="@+id/countDownProgress"
+            android:clickable="true"
+            />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="stop"
-        android:id="@+id/btn_stop"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"
+            android:id="@+id/btn_start"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="restart"
-        android:id="@+id/btn_restart"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stop"
+            android:id="@+id/btn_stop"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="restart"
+            android:id="@+id/btn_restart"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.yfsl.timeviewdemo.CountDownProgressView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:circSolidColor="@android:color/darker_gray"
+            app:circFrameColor="@android:color/black"
+            app:progressColor="@android:color/holo_blue_light"
+            app:textColor="@android:color/white"
+            android:id="@+id/countDownProgress_right"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"
+            android:id="@+id/btn_start_right"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stop"
+            android:id="@+id/btn_stop_right"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="restart"
+            android:id="@+id/btn_restart_right"/>
+    </LinearLayout>
+
+
 
 
 </LinearLayout>
