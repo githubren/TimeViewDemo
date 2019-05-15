@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CountDownProgressView">
+        <attr name="circSolidColor" format="color"/>
+        <attr name="circFrameColor" format="color"/>
+        <attr name="progressColor" format="color"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+</resources>
